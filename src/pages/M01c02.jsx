@@ -1,4 +1,4 @@
-import PageLayout from '../components/PageLayout'
+import PageLayout from '../Components/PageLayout'
 
 export default function M01c02() {
   return (

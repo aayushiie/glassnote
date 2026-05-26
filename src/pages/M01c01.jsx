@@ -1,4 +1,4 @@
-import PageLayout from '../components/PageLayout'
+import PageLayout from '../Components/PageLayout'
 import { NavLink } from 'react-router-dom'
 
 export default function M01c01() {

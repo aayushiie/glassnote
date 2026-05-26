@@ -1,4 +1,4 @@
-import PageLayout from '../components/PageLayout'
+import PageLayout from '../Components/PageLayout'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 

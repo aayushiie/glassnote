@@ -10,6 +10,10 @@ export const sidebarItems = [
         label: 'What is computer vision?',
         path: '/m01c02',
       },
+      {
+        label: 'Perspective',
+        path: '/m02c01',
+      },
     ],
   },
   {

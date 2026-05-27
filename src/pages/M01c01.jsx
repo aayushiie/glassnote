@@ -40,24 +40,9 @@ export default function M01c01() {
       </section>
 
       <section id="module2" className="doc-block">
-        <h2>Module 02: Optical Flow</h2>
+        <h2>Module 02: Image Formation and Image Sensing</h2>
         <ul>
-          <li>Chapter 1: Motion field and optical flow</li>
-          <li>Chapter 2: Optical flow constraint equation</li>
-          <li>Chapter 3: Lucas-Kanade method</li>
-          <li>Chapter 4: Coarse-to-Fine flow estimation</li>
-          <li>Chapter 5: Motion and structure</li>
-          <li>Chapter 6: Tomasi-Kanade Factorization</li>
-          <li>Chapter 7: Object tracking and change detection</li>
-          <li>Chapter 8: Gaussian mixture model</li>
-          <li>Chapter 9: Object tracking methods</li>
-        </ul>
-      </section>
-
-      <section id="module3" className="doc-block">
-        <h2>Module 03: Image Formation</h2>
-        <ul>
-          <li>Chapter 1: Perspective</li>
+          <li><NavLink to={"/m02c01"} className="underline text-[#c4c4c5]">Chapter 1: Perspective</NavLink></li>
           <li>Chapter 2: Image formation using lenses </li>
           <li>Chapter 3: Depth of field</li>
           <li>Chapter 4: Issues related to lenses and wide angle cameras</li>
@@ -71,8 +56,8 @@ export default function M01c01() {
         </ul>
       </section>
 
-      <section id="module4" className="doc-block">
-        <h2>Module 04: Digital Image Processing</h2>
+      <section id="module3" className="doc-block">
+        <h2>Module 03: Digital Image Processing</h2>
         <ul>
           <li>Chapter 1: Pixels, filters, and convolution</li>
           <li>Chapter 2: Template matching by correlation</li>
@@ -87,37 +72,8 @@ export default function M01c01() {
         </ul>
       </section>
 
-      <section id="module5" className="doc-block">
-        <h2>Module 05: Depth from Defocus</h2>
-        <ul>
-          <li>Chatper 1: Overview of depth from defocus</li>
-          <li>Chatper 2: Point spread function</li>
-          <li>Chatper 3: Active illumination methods</li>
-          <li>Chatper 4: Photometric stereo systems</li>
-          <li>Chatper 5: Structured light range finding</li>
-          <li>Chatper 6: Phase shifting method</li>
-          <li>Chatper 7: Structured Light Systems</li>
-          <li>Chatper 8: Time of flight method</li>
-        </ul>
-      </section>
-
-      <section id="module6" className="doc-block">
-        <h2>Module 6: Camera Calibration</h2>
-        <ul>
-          <li>Chapter 1: Overview of camera calibration</li>
-          <li>Chapter 2: Linear camera model</li>
-          <li>Chapter 3: Intrinsic and extrinsic matrices</li>
-          <li>Chapter 4: Simple stereo</li>
-          <li>Chapter 5: Uncalibrated stereo</li>
-          <li>Chapter 6: Epipolar geometry</li>
-          <li>Chapter 7: Stereo vision in nature</li>
-          <li>Chapter 8: Estimating fundamental matrix</li>
-          <li>Chapter 9: Finding correspondences and computing depth</li>
-        </ul>
-      </section>
-
-      <section id="module7" className="doc-block">
-        <h2>Module 7: Edge Detection and SIFT Detectors</h2>
+      <section id="module4" className="doc-block">
+        <h2>Module 4: Edge Detection and SIFT Detectors</h2>
         <ul>
           <li>Chapter 1: What is edge?</li>
           <li>Chapter 2: Edge detection using gradients</li>
@@ -133,19 +89,8 @@ export default function M01c01() {
         </ul>
       </section>
 
-      <section id="module8" className="doc-block">
-        <h2>Module 8: Image Segmentation</h2>
-        <ul>
-          <li>Chapter 1: Overview of image segmentation</li>
-          <li>Chapter 2: Segmentation by clustering</li>
-          <li>Chapter 3: k-means segmentation</li>
-          <li>Chapter 4: Mean-shift segmentation</li>
-          <li>Chapter 5: Graph based segmentation</li>
-        </ul>
-      </section>
-
-      <section id="module9" className="doc-block">
-        <h2>Module 9: Image Stitching and Face Detection</h2>
+      <section id="module5" className="doc-block">
+        <h2>Module 5: Image Stitching and Face Detection</h2>
         <ul>
           <li>Chapter 1: Image stitching</li>
           <li>Chapter 2: Computing homography</li>
@@ -159,8 +104,8 @@ export default function M01c01() {
         </ul>
       </section>
 
-      <section id="module10" className="doc-block">
-        <h2>Module 10: Radiometry and Reflectance</h2>
+      <section id="module6" className="doc-block">
+        <h2>Module 6: Radiometry and Reflectance</h2>
         <ul>
           <li>Chapter 1: Overview of radiometry and reflectance</li>
           <li>Chapter 2: Scene radiance and image irradiance</li>
@@ -175,6 +120,61 @@ export default function M01c01() {
           <li>Chapter 11: Shape from normals</li>
           <li>Chapter 12: Interreflections</li>
           <li>Chapter 13: Shape from shading</li>
+        </ul>
+      </section>
+
+      <section id="module7" className="doc-block">
+        <h2>Module 07: Depth from Defocus</h2>
+        <ul>
+          <li>Chatper 1: Overview of depth from defocus</li>
+          <li>Chatper 2: Point spread function</li>
+          <li>Chatper 3: Active illumination methods</li>
+          <li>Chatper 4: Photometric stereo systems</li>
+          <li>Chatper 5: Structured light range finding</li>
+          <li>Chatper 6: Phase shifting method</li>
+          <li>Chatper 7: Structured Light Systems</li>
+          <li>Chatper 8: Time of flight method</li>
+        </ul>
+      </section>
+
+      <section id="module8" className="doc-block">
+        <h2>Module 8: Camera Calibration</h2>
+        <ul>
+          <li>Chapter 1: Overview of camera calibration</li>
+          <li>Chapter 2: Linear camera model</li>
+          <li>Chapter 3: Intrinsic and extrinsic matrices</li>
+          <li>Chapter 4: Simple stereo</li>
+          <li>Chapter 5: Uncalibrated stereo</li>
+          <li>Chapter 6: Epipolar geometry</li>
+          <li>Chapter 7: Stereo vision in nature</li>
+          <li>Chapter 8: Estimating fundamental matrix</li>
+          <li>Chapter 9: Finding correspondences and computing depth</li>
+        </ul>
+      </section>
+
+      <section id="module9" className="doc-block">
+        <h2>Module 09: Optical Flow</h2>
+        <ul>
+          <li>Chapter 1: Motion field and optical flow</li>
+          <li>Chapter 2: Optical flow constraint equation</li>
+          <li>Chapter 3: Lucas-Kanade method</li>
+          <li>Chapter 4: Coarse-to-Fine flow estimation</li>
+          <li>Chapter 5: Motion and structure</li>
+          <li>Chapter 6: Tomasi-Kanade Factorization</li>
+          <li>Chapter 7: Object tracking and change detection</li>
+          <li>Chapter 8: Gaussian mixture model</li>
+          <li>Chapter 9: Object tracking methods</li>
+        </ul>
+      </section>
+
+      <section id="module10" className="doc-block">
+        <h2>Module 10: Image Segmentation</h2>
+        <ul>
+          <li>Chapter 1: Overview of image segmentation</li>
+          <li>Chapter 2: Segmentation by clustering</li>
+          <li>Chapter 3: k-means segmentation</li>
+          <li>Chapter 4: Mean-shift segmentation</li>
+          <li>Chapter 5: Graph based segmentation</li>
         </ul>
       </section>
 

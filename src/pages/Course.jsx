@@ -3,7 +3,7 @@ import PageLayout from '../Components/PageLayout'
 export default function Course() {
     return (
         <PageLayout
-            title="Courses"
+            title="Course"
             description="Helpful courses for guidance."
             toc={[
                 { id: 'certification', label: 'Certification' },

@@ -1,5 +1,5 @@
 const REPO =
-  "https://github.com/yourusername/computer-vision-course/blob/main/src/posts"
+  "https://github.com/aayushiie/computer-vision-course/blob/main/src/posts"
 
 export default function EditPageButton({ githubPath }) {
   return (

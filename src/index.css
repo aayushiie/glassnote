@@ -633,3 +633,36 @@ code {
     max-width: 100%;
   }
 }
+
+.edit-page {
+  margin-top: 4rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid #161616;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.edit-page a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  color: #8b8b8b;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.edit-page a:hover {
+  color: #f8f6f3;
+}
+
+.edit-page svg {
+  width: 16px;
+  height: 16px;
+}

@@ -1,10 +1,12 @@
 import Layout from './Layout'
+import EditPageButton from './EditPageButton'
 
 export default function PageLayout({
   title,
   description,
   children,
   toc,
+  githubPath,
 }) {
   return (
     <Layout toc={toc}>
@@ -13,7 +15,13 @@ export default function PageLayout({
         <p>{description}</p>
       </div>
 
-      <div className="page-content">{children}</div>
+      <div className="page-content">
+        {children}
+      </div>
+
+      {githubPath && (
+        <EditPageButton githubPath={githubPath} />
+      )}
     </Layout>
   )
 }

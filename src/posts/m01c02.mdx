@@ -1,20 +1,28 @@
-import PageLayout from '../Components/PageLayout'
+import PageLayout from "../Components/PageLayout"
+import { NavLink } from "react-router-dom"
 
-export default function M01c02() {
-  return (
-    <PageLayout
-      title="What is Computer Vision?"
-      description="Module 01: Chapter 02"
-      toc={[
-        { id: 'vision', label: 'Vision' },
-        { id: 'computer-vision', label: 'Computer Vision' },
-        { id: 'image', label: 'Image' },
-        { id: 'application', label: 'Applications' },
-        { id: 'eye', label: 'Human Eye' },
-        { id: 'illusion', label: 'Illusion' },
-      ]}
-    >
-      <section id="vision" className="doc-block">
+export const meta = {
+  title: "What is Computer Vision?",
+  description: "Module 01: Chapter 02",
+  githubPath: "m01c02.mdx",
+  toc: [
+    { id: 'vision', label: 'Vision' },
+    { id: 'computer-vision', label: 'Computer Vision' },
+    { id: 'image', label: 'Image' },
+    { id: 'application', label: 'Applications' },
+    { id: 'eye', label: 'Human Eye' },
+    { id: 'illusion', label: 'Illusion' },
+  ],
+}
+
+<PageLayout
+  title={meta.title}
+  description={meta.description}
+  toc={meta.toc}
+  githubPath={meta.githubPath}
+>
+
+<section id="vision" className="doc-block">
         <h2>Vision</h2>
         <p>Vision is one of the most powerful senses. We are able to perceive objects around us because light reflects off objects and enters our eyes. Without light, there would be no vision.</p>
         <p>When we have a camera in our environment that is connected to a software with capabilities of vision, some portion of the light is also scattered in the direction of the camera. That camera now takes the role of the human eye, capturing a 3-dimensional scene and projecting it onto a 2-dimensional image. This 2D image is passed to the vision software that provides a description of the scene.</p>
@@ -41,8 +49,7 @@ export default function M01c02() {
       <section id="image" className="doc-block">
         <h2>Image</h2>
 
-        <p>An image is an array of pixels. A pixel represents the smallest discrete unit of a digital image. In digital image processing, an image is a 2-dimensional function, <i>f(x, y),</i> whose value at a particular coordinate represents the intensity or gray level at that point. When x, y, and the intensity of function (f) are all finite and discrete quantities then it is considered a digital image.
-        </p>
+        <p>An image is an array of pixels. A pixel represents the smallest discrete unit of a digital image. In digital image processing, an image is a 2-dimensional function, <i>f(x, y),</i> whose value at a particular coordinate represents the intensity or gray level at that point. When x, y, and the intensity of function (f) are all finite and discrete quantities then it is considered a digital image.</p>
         <p>Humans can perceive images only within the visible band of the electromagnetic spectrum. However, imaging systems can also form images using X-rays, infrared radiation, radio waves, or even ultrasound, which humans cannot directly perceive without specialized devices.</p>
         <p>Computer vision helps in bridging the gap between what the human eye cannot directly perceive. Imagine looking at an image with two children playing in a park covered in light fog, with swings in the background. Now from an image like this, it is easy to interpret the number of people, the setting of the scene (park with swings), infer the playful and lighthearted mood of the scene, and understand the weather through fog. However, this same image is nothing but a set of pixels that is given to the vision software to interpret the same information. This is why the task of computer vision is both challenging and fascinating.</p>
       </section>
@@ -88,6 +95,5 @@ export default function M01c02() {
         </p>
         <p>Why do these illusions and ambiguities happen? It's because we live on this assumption that light is coming from above (because the Sun is typically our primary source of illumination). So, instinctively, we don't imagine that illumination is coming from below. We use this assumption first and then try to interpret the shading of an object. In doing so, we're able to form different interpretation of an object or an image.</p>
       </section>
-    </PageLayout>
-  )
-}
+
+</PageLayout>

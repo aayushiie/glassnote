@@ -11,7 +11,7 @@ export const sidebarItems = [
         path: '/m01c02',
       },
       {
-        label: 'Perspective',
+        label: 'Perspective Projection',
         path: '/m02c01',
       },
     ],

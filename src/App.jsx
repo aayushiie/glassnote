@@ -3,9 +3,10 @@ import Home from './pages/Home'
 import Course from './pages/Course'
 import Readings from './pages/Readings'
 import Contact from './pages/Contact'
-import M01c01 from './pages/M01c01'
-import M01c02 from './pages/M01c02'
-import M02c01 from './pages/M02c01'
+import M01c01 from "./posts/m01c01.mdx"
+import M01c02 from "./posts/m01c02.mdx"
+import M02c01 from './posts/m02c01.mdx'
+
 
 export default function App() {
   return (

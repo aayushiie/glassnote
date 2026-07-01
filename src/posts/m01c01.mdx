@@ -1,0 +1,229 @@
+import PageLayout from "../Components/PageLayout"
+import { NavLink } from "react-router-dom"
+
+export const meta = {
+  title: "Introduction",
+  description: "Module 01: Chapter 01",
+  githubPath: "m01c01.mdx",
+  toc: [
+    { id: "welcome", label: "Welcome" },
+    { id: "module1", label: "Module 01" },
+    { id: "module2", label: "Module 02" },
+    { id: "module3", label: "Module 03" },
+    { id: "module4", label: "Module 04" },
+    { id: "module5", label: "Module 05" },
+    { id: "module6", label: "Module 06" },
+    { id: "module7", label: "Module 07" },
+    { id: "module8", label: "Module 08" },
+    { id: "module9", label: "Module 09" },
+    { id: "module10", label: "Module 10" },
+    { id: "module11", label: "Module 11" },
+    { id: "module12", label: "Module 12" },
+  ],
+}
+
+<PageLayout
+  title={meta.title}
+  description={meta.description}
+  toc={meta.toc}
+  githubPath={meta.githubPath}
+>
+
+<section id="welcome" className="doc-block">
+
+## Welcome
+
+Computer Vision is an evolving field of computing whose purpose is to equip machines with the sense of sight. I love this field and I love teaching, which is why I wanted to do a series of posts delving deeper, starting with the basics of Optics in Physics and going further into concepts of Radiometry, image stitching, appearance matching, and then finally understanding the mathematics of the state-of-the-art object detection models (from RCNN to YOLO versions). I want this series to be as in-depth as possible, discussing every minute concept involved in computer vision along with its implementation. So I prepared a curriculum (perhaps a course handout, if you fancy calling it that) 'cause I like doing just that little extra unnecessary work.
+
+Following are the different modules and their corresponding chapters. The chapters that are available are underlined and linked to their respective page.
+
+</section>
+
+<section id="module1" className="doc-block">
+
+## Module 01: Introduction to Computer Vision
+
+- <NavLink to="/m01c01" className="underline text-[#c4c4c5]">Chapter 1: Introduction</NavLink>
+- <NavLink to="/m01c02" className="underline text-[#c4c4c5]">Chapter 2: What is computer vision?</NavLink>
+
+</section>
+
+<section id="module2" className="doc-block">
+
+## Module 02: Image Formation and Image Sensing
+
+- <NavLink to="/m02c01" className="underline text-[#c4c4c5]">Chapter 1: Perspective Projection</NavLink>
+- Chapter 2: Image formation using lenses
+- Chapter 3: Depth of field
+- Chapter 4: Issues related to lenses and wide angle cameras
+- Chapter 5: Animal eyes
+- Chapter 6: Image sensing
+- Chapter 7: Resolution, noise, and dynamic range
+- Chapter 8: Sensing color
+- Chapter 9: Camera response and HDR imaging
+- Chapter 10: Binary images
+- Chapter 11: Segmenting binary images
+
+</section>
+
+<section id="module3" className="doc-block">
+
+## Module 03: Digital Image Processing
+
+- Chapter 1: Pixels, filters, and convolution
+- Chapter 2: Template matching by correlation
+- Chapter 3: Fourier transform
+- Chapter 4: Convolution theorem
+- Chapter 5: Image filtering in frequency domain
+- Chapter 6: Deconvolution
+- Chapter 7: Sampling theory and aliasing
+- Chapter 8: Image restoration
+- Chapter 9: Thresholding
+- Chapter 10: Image compression
+
+</section>
+
+<section id="module4" className="doc-block">
+
+## Module 4: Edge Detection and SIFT Detectors
+
+- Chapter 1: What is edge?
+- Chapter 2: Edge detection using gradients
+- Chapter 3: Edge detection using laplacian
+- Chapter 4: Canny edge detector
+- Chapter 5: Corner detection
+- Chapter 6: Boundary detection
+- Chapter 7: Active contours
+- Chapter 8: Hough transform
+- Chapter 9: SIFT detector
+- Chapter 10: What is an interest point?
+- Chapter 11: SIFT descriptor
+
+</section>
+
+<section id="module5" className="doc-block">
+
+## Module 5: Image Stitching and Face Detection
+
+- Chapter 1: Image stitching
+- Chapter 2: Computing homography
+- Chapter 3: Dealing with outliers: RANSAC
+- Chapter 4: Warping and blending images
+- Chapter 5: Overview of face detection
+- Chapter 6: Haar features for face detection
+- Chapter 7: Integral Image
+- Chapter 8: Nearest neighbor classifier
+- Chapter 9: SVM for face detection
+
+</section>
+
+<section id="module6" className="doc-block">
+
+## Module 6: Radiometry and Reflectance
+
+- Chapter 1: Overview of radiometry and reflectance
+- Chapter 2: Scene radiance and image irradiance
+- Chapter 3: BRDF
+- Chapter 4: Reflectance models
+- Chapter 5: Reflection from rough surfaces
+- Chapter 6: Dichromatic model
+- Chapter 7: Photometric stereo
+- Chapter 8: Gradient space and reflectance map
+- Chapter 9: Lambertian case
+- Chapter 10: Calibration based photometric stereo
+- Chapter 11: Shape from normals
+- Chapter 12: Interreflections
+- Chapter 13: Shape from shading
+
+</section>
+
+<section id="module7" className="doc-block">
+
+## Module 07: Depth from Defocus
+
+- Chapter 1: Overview of depth from defocus
+- Chapter 2: Point spread function
+- Chapter 3: Active illumination methods
+- Chapter 4: Photometric stereo systems
+- Chapter 5: Structured light range finding
+- Chapter 6: Phase shifting method
+- Chapter 7: Structured Light Systems
+- Chapter 8: Time of flight method
+
+</section>
+
+<section id="module8" className="doc-block">
+
+## Module 8: Camera Calibration
+
+- Chapter 1: Overview of camera calibration
+- Chapter 2: Linear camera model
+- Chapter 3: Intrinsic and extrinsic matrices
+- Chapter 4: Simple stereo
+- Chapter 5: Uncalibrated stereo
+- Chapter 6: Epipolar geometry
+- Chapter 7: Stereo vision in nature
+- Chapter 8: Estimating fundamental matrix
+- Chapter 9: Finding correspondences and computing depth
+
+</section>
+
+<section id="module9" className="doc-block">
+
+## Module 09: Optical Flow
+
+- Chapter 1: Motion field and optical flow
+- Chapter 2: Optical flow constraint equation
+- Chapter 3: Lucas-Kanade method
+- Chapter 4: Coarse-to-Fine flow estimation
+- Chapter 5: Motion and structure
+- Chapter 6: Tomasi-Kanade Factorization
+- Chapter 7: Object tracking and change detection
+- Chapter 8: Gaussian mixture model
+- Chapter 9: Object tracking methods
+
+</section>
+
+<section id="module10" className="doc-block">
+
+## Module 10: Image Segmentation
+
+- Chapter 1: Overview of image segmentation
+- Chapter 2: Segmentation by clustering
+- Chapter 3: k-means segmentation
+- Chapter 4: Mean-shift segmentation
+- Chapter 5: Graph based segmentation
+
+</section>
+
+<section id="module11" className="doc-block">
+
+## Module 11: Appearance Matching
+
+- Chapter 1: Shape vs appearance
+- Chapter 2: Learning appearance
+- Chapter 3: Principal component analysis
+- Chapter 4: PCA and SVD
+- Chapter 5: Parametric appearance representation
+
+</section>
+
+<section id="module12" className="doc-block">
+
+## Module 12: Object Detection Models
+
+- Chapter 1: R-CNN
+- Chapter 2: Mean average precision (mAP)
+- Chapter 3: Fast R-CNN
+- Chapter 4: Faster R-CNN
+- Chapter 5: YOLOv1
+- Chapter 6: Single Shot MultiBox Detector (SSD)
+- Chapter 7: YOLOv2
+- Chapter 8: YOLOv3
+- Chapter 9: YOLOv4, CIoU Loss, CSPDarknet53, SPP, PANet
+- Chapter 10: DETR
+- Chapter 11: YOLOv5
+
+</section>
+
+</PageLayout>
